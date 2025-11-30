@@ -1,0 +1,22 @@
+
+> event-works-platform@0.1.0 build
+> next build
+
+   ▲ Next.js 14.0.0
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/components/Admin/LeadManagement.tsx:137:23
+Type error: Parameter 'provided' implicitly has an 'any' type.
+
+[0m [90m 135 |[39m[0m
+[0m [90m 136 |[39m                   [33m<[39m[33mDroppable[39m droppableId[33m=[39m{status}[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 137 |[39m                     {(provided) [33m=>[39m ([0m
+[0m [90m     |[39m                       [31m[1m^[22m[39m[0m
+[0m [90m 138 |[39m                       [33m<[39m[33mBox[39m[0m
+[0m [90m 139 |[39m                         {[33m...[39mprovided[33m.[39mdroppableProps}[0m
+[0m [90m 140 |[39m                         ref[33m=[39m{provided[33m.[39minnerRef}[0m

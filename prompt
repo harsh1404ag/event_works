@@ -1,0 +1,44 @@
+# Project: "WedTech" Managed Marketplace & Package Builder
+# Role: Senior Full-Stack Developer & UI/UX Designer
+# Resources: you are part of a startup which is a part of google for startups and you have $25k free google cloud credits, so you have to use that services only to reduce the cost
+
+I want you to build a comprehensive wedding planning platform for the Indian market. Unlike a standard e-commerce site, this is a "Managed Marketplace" where the platform acts as the intermediary layer between clients and vendors to ensure quality and trust.
+
+## 1. Core Business Logic (The "Managed" Model)
+- **No Direct Booking:** Users cannot "click and book" a vendor instantly. They "Request a Quote" or "Check Availability."
+- **Anchor Service:** The platform is owned by a Decor/Tent company. The "Decor/Venue" package is the primary product; other services (Photography, Makeup) are add-ons.
+- **Centralized Payments:** The user pays the Platform (Us), and the Platform pays the Vendors.
+
+## 2. Key Features to Build
+
+### A. Frontend (Client-Facing) - "The Package Builder"
+Create a visual, drag-and-drop style "Wedding Builder" wizard with the following steps:
+1.  **Step 1: Basic Info:** Date, City (Default: Ludhiana, Phagwara, jalandhar), Guest Count, Budget Range.
+2.  **Step 2: Select Theme (The Anchor):** Show visual cards for Decor Themes (e.g., Royal Red, Floral Pastel, Minimalist). This is the base package.
+3.  **Step 3: Add Services:** Users can toggle "Add-ons" like Photographer, Makeup Artist, Catering.
+    - *Logic:* When they select "Photographer," show 3 tiers: Standard, Premium, Luxury (with dummy pricing). Don't show specific vendor names yet to prevent platform bypass.
+4.  **Step 4: The Cart/Summary:** Show an estimated "Total Wedding Cost."
+5.  **Step 5: Call to Action:** A button saying "Check Availability & Get Final Price" (Triggers lead capture form: Name, WhatsApp Number, Email).
+
+### B. Vendor Logic (The "Invisible" Backend)
+- **WhatsApp Integration Placeholder:** Design a system where vendor availability is checked via WhatsApp, not a login dashboard.
+    - *Logic:* When a User requests a quote, the Admin receives the lead. The system should be ready to integrate with the WhatsApp Business API to send automated messages to vendors ("Are you free on Nov 24?").
+
+### C. Admin Dashboard (For Me/Staff)
+- **Lead Management:** A kanban board (New Lead -> Contacted -> Quote Sent -> Booked).
+- **Vendor Database:** A simple CMS to add vendors with fields: Name, Category, Base Price, Phone Number, Portfolio Images.
+- **Quotation Generator:** A tool to generate a PDF quote based on the user's selection in the "Package Builder."
+
+## 3. Design Aesthetic & UX
+- **Vibe:** Premium, trustworthy, celebratory but clean. Think "Pinterest meets Airbnb."
+- **Color Palette:** Gold (#D4AF37) and Deep Royal Blue or Maroon for accents; plenty of whitespace.
+- **Mobile-First:** 90% of users will visit via mobile. The "Package Builder" must work smoothly on touch screens.
+
+## 4. Technical Stack Recommendations
+- **Framework:** Next.js (for SEO and speed) or React.
+- **Styling:** dont use Tailwind CSS (for rapid, modern UI).
+- **Database:**  Firebase (for real-time vendor data and lead management).
+- **CMS:** to easily manage the vendor portfolio and decor images.
+
+## 5. Deliverables
+Please generate the folder structure, the core code for the "Package Builder" component, the database schema for Users/Vendors/Leads, and the landing page layout. Start by explaining the architecture you plan to use.
