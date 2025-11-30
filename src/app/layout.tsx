@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   title: 'Event Works - Best Event Management Company in Ludhiana, Phagwara, Jalandhar | Since 2004',
   description: 'Top-rated event management company in Punjab. Expert wedding planning, catering, decoration, photography, DJ services in Ludhiana, Phagwara, Jalandhar. 5000+ successful events since 2004.',
   keywords: 'best event management company Ludhiana, best event management company Phagwara, best event management company Jalandhar, wedding planner Punjab, best catering service Ludhiana, best catering service Phagwara, best catering service Jalandhar, wedding decoration Ludhiana, event planner near me, corporate event management Punjab, birthday party planner, best wedding planner Ludhiana, professional event management, top event company Punjab',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
+  themeColor: '#D4AF37',
 };
 
 export default function RootLayout({
@@ -20,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+      </head>
+      <body className={inter.className} style={{ overflowX: 'hidden' }}>
         <ThemeRegistry>
           <Navigation />
           {children}

@@ -75,7 +75,7 @@ export default function Navigation() {
           color: 'white',
         }}
       >
-        <Toolbar sx={{ flexDirection: 'column', pt: 2 }}>
+        <Toolbar sx={{ flexDirection: 'column', pt: { xs: 1, md: 2 }, pb: { xs: 1, md: 0 } }}>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

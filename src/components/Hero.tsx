@@ -6,10 +6,10 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <Box sx={{ px: { xs: 2, md: 4 } }}>
+    <Box sx={{ px: { xs: 2, md: 4 }, py: { xs: 1, md: 0 } }}>
       <Box
         sx={{
-          height: '70vh',
+          height: { xs: '60vh', md: '70vh' },
           backgroundImage: 'url(/images/hero_image.jpeg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -18,7 +18,8 @@ export default function Hero() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          borderRadius: 2,
+          borderRadius: { xs: 1, md: 2 },
+          willChange: 'transform',
         }}
       >
       <motion.div
