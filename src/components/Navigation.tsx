@@ -100,11 +100,11 @@ export default function Navigation() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <Box sx={{ display: 'flex', gap: { xs: 2, md: 4 }, mt: 2 }}>
-              <Button component={Link} href="/services" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.7rem', md: '0.85rem' }, '&:hover': { color: '#D4AF37' } }}>Services</Button>
-              <Button component={Link} href="/portfolio" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.7rem', md: '0.85rem' }, '&:hover': { color: '#D4AF37' } }}>Portfolio</Button>
-              <Button component={Link} href="/about" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.7rem', md: '0.85rem' }, '&:hover': { color: '#D4AF37' } }}>About</Button>
-              <Button component={Link} href="/contact" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.7rem', md: '0.85rem' }, '&:hover': { color: '#D4AF37' } }}>Contact</Button>
+            <Box sx={{ display: 'flex', gap: { xs: 1, md: 4 }, mt: 2 }}>
+              <Button component={Link} href="/services" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Services</Button>
+              <Button component={Link} href="/portfolio" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Portfolio</Button>
+              <Button component={Link} href="/about" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>About</Button>
+              <Button component={Link} href="/contact" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Contact</Button>
             </Box>
           </motion.div>
         </Toolbar>
