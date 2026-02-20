@@ -12,16 +12,13 @@ export default function Footer() {
             Follow Us
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
-            <IconButton href="https://facebook.com" target="_blank" sx={{ color: '#D4AF37' }}>
+            <IconButton href="https://www.facebook.com/profile.php?id=100065148667081" target="_blank" sx={{ color: '#D4AF37' }}>
               <Facebook />
             </IconButton>
-            <IconButton href="https://instagram.com" target="_blank" sx={{ color: '#D4AF37' }}>
+            <IconButton href="https://www.instagram.com/vikas_tent/" target="_blank" sx={{ color: '#D4AF37' }}>
               <Instagram />
             </IconButton>
-            <IconButton href="https://youtube.com" target="_blank" sx={{ color: '#D4AF37' }}>
-              <YouTube />
-            </IconButton>
-            <IconButton href="https://linkedin.com" target="_blank" sx={{ color: '#D4AF37' }}>
+            <IconButton href="https://www.linkedin.com/in/harshagnihotr-i/" target="_blank" sx={{ color: '#D4AF37' }}>
               <LinkedIn />
             </IconButton>
           </Box>
