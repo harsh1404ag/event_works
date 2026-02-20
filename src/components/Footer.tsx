@@ -23,7 +23,7 @@ export default function Footer() {
             </IconButton>
           </Box>
           <Typography variant="body2" sx={{ mt: 3, opacity: 0.7 }}>
-            © 2025 Event Works. All rights reserved.
+            © 2026 Event Works. All rights reserved.
           </Typography>
         </Box>
       </Container>
