@@ -1,14 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import ThemeRegistry from '@/components/ThemeRegistry';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import ThemeRegistry from '../components/ThemeRegistry';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
-  title: 'Event Works | Best Event Management & Catering in Jalandhar, Ludhiana, Phagwara',
+  title: 'Event Works | Best Event Management & Catering in Punjab',
   description: 'Event Works provides luxury wedding planning, corporate event management, and the best catering services in Jalandhar, Ludhiana, Phagwara, Punjab. 5000+ events since 2004. Turn your events into memories.',
   keywords: 'Event Management Jalandhar, Best Catering Service Jalandhar, Event Management Ludhiana, Best Catering Service Ludhiana, Event Management Phagwara, Best Catering Service Phagwara, Wedding Planner Punjab, Luxury Events, Corporate Event Management Punjab, Birthday Party Planner, Wedding Decoration, Photography Services, DJ Services',
   openGraph: {
@@ -37,8 +34,8 @@ export default function RootLayout({
               "@type": "EventPlanner",
               "name": "Event Works",
               "image": "https://eventworks-f75d8.web.app/images/event_works_logo.png",
-              "telephone": "+91-9465638069",
-              "email": "support@eventworks.in",
+              "telephone": "+91-9056220903",
+              "email": "harsh@eventworks.in",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Phagwara",
@@ -66,9 +63,9 @@ export default function RootLayout({
                   "name": "Phagwara"
                 }
               ],
-              "description": "Top-rated event management and catering company in Jalandhar, Ludhiana, and Phagwara. Specializing in weddings, corporate events, and luxury celebrations since 2004.",
+              "description": "Top-rated event management and catering company in Punjab. Specializing in weddings, corporate events, and luxury celebrations since 2004.",
               "foundingDate": "2004",
-              "slogan": "Crafting Your Vision Since 2004",
+              "slogan": "Setting the Standard for Events in Punjab & Beyond Since 2004",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.9",
@@ -82,7 +79,7 @@ export default function RootLayout({
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Wedding Planning"
+                      "name": "Event Planning"
                     }
                   },
                   {
@@ -97,13 +94,6 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Service",
                       "name": "Event Decoration"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Photography Services"
                     }
                   },
                   {
@@ -126,7 +116,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className} style={{ overflowX: 'hidden' }}>
+      <body style={{ overflowX: 'hidden' }}>
         <ThemeRegistry>
           <Navigation />
           {children}
