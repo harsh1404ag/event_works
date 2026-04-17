@@ -24,7 +24,7 @@ export default function ContactPage() {
     if (Object.values(newErrors).some(error => error)) return;
 
     const whatsappMessage = `New Contact Form Submission:\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
-    window.open(`https://wa.me/919056220903?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+    window.open(`https://wa.me/919056220903?text=${encodeURIComponent(whatsappMessage)}`, '_blank', 'noopener,noreferrer');
 
     const mailtoLink = `mailto:harsh@eventworks.in?subject=Contact Form Submission&body=${encodeURIComponent(whatsappMessage)}`;
     window.location.href = mailtoLink;
@@ -116,3 +116,4 @@ export default function ContactPage() {
     </Box>
   );
 }
+

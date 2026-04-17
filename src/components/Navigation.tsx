@@ -25,7 +25,6 @@ const navItems = [
   { label: 'Portfolio', href: '/portfolio' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Package Builder', href: '/package-builder' },
 ];
 
 export default function Navigation() {
@@ -55,7 +54,7 @@ export default function Navigation() {
             variant="contained"
             fullWidth
             component={Link}
-            href="/package-builder"
+            href="/contact"
             onClick={handleDrawerToggle}
           >
             Start Planning
@@ -101,10 +100,10 @@ export default function Navigation() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Box sx={{ display: 'flex', gap: { xs: 1, md: 4 }, mt: 2 }}>
-              <Button component={Link} href="/services" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Services</Button>
-              <Button component={Link} href="/portfolio" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Portfolio</Button>
-              <Button component={Link} href="/about" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>About</Button>
-              <Button component={Link} href="/contact" sx={{ color: '#000', fontFamily: 'Azonix', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Contact</Button>
+              <Button component={Link} href="/services" sx={{ color: '#000', fontFamily: 'Lora Italic', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Services</Button>
+              <Button component={Link} href="/portfolio" sx={{ color: '#000', fontFamily: 'Lora Italic', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Portfolio</Button>
+              <Button component={Link} href="/about" sx={{ color: '#000', fontFamily: 'Lora Italic', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>About</Button>
+              <Button component={Link} href="/contact" sx={{ color: '#000', fontFamily: 'Lora Italic', fontSize: { xs: '0.6rem', md: '0.85rem' }, px: { xs: 0.5, md: 2 }, minWidth: 'auto', '&:hover': { color: '#D4AF37' } }}>Contact</Button>
             </Box>
           </motion.div>
         </Toolbar>

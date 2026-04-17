@@ -34,9 +34,9 @@ export const sendVendorAvailabilityCheck = async (
   leadId: string
 ) => {
   const message = `
-🎉 *New Wedding Inquiry - Event Works*
+🎉 *New Event Inquiry - Event Works*
 
-📅 *Wedding Date:* ${weddingDate.toLocaleDateString('en-IN')}
+📅 *Event Date:* ${weddingDate.toLocaleDateString('en-IN')}
 📍 *Location:* ${city}
 🆔 *Lead ID:* ${leadId}
 
@@ -63,11 +63,11 @@ export const sendClientConfirmation = async (
   const message = `
 🎉 *Thank you ${clientName}!*
 
-Your wedding package request has been received.
+Your Event request has been received.
 
 📋 *Request ID:* ${leadId}
 ⏰ *Response Time:* Within 2 hours
-📞 *Contact:* +91 94656 38069
+📞 *Contact:* +91 9056220903
 
 Our team is checking vendor availability and will contact you soon with your personalized quote.
 

@@ -32,7 +32,7 @@ export default function Hero() {
             variant="h1"
             sx={{
               color: 'white',
-              fontFamily: 'Azonix',
+              fontFamily: 'Playfair Italic',
               fontSize: { xs: '2rem', md: '3.5rem' },
               mb: 2,
               textTransform: 'uppercase',
@@ -40,13 +40,13 @@ export default function Hero() {
               textShadow: '3px 3px 10px rgba(0,0,0,0.8)',
             }}
           >
-            Crafting Your Vision
+            Two Decades of Iconic Celebrations
           </Typography>
           <Typography
             variant="h6"
             sx={{
               color: '#050505ff',
-              fontFamily: 'Azonix',
+              fontFamily: 'Playfair Italic',
               fontSize: { xs: '0.9rem', md: '1.2rem' },
               mb: 4,
               textShadow: '2px 2px 8px rgba(0,0,0,0.8)',
@@ -62,7 +62,7 @@ export default function Hero() {
                 color: '#000',
                 px: 5,
                 py: 2,
-                fontFamily: 'Azonix',
+                fontFamily: 'Lora Italic',
                 fontSize: { xs: '0.9rem', md: '1.1rem' },
                 '&:hover': {
                   bgcolor: '#B8941F',

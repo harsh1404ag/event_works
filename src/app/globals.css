@@ -5,7 +5,7 @@
   src: url('/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   src: url('/fonts/Lora-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
-  font-display: swap;
+  font-display: fallback;
 }
 
 * {

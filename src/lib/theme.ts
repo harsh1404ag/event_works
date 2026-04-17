@@ -24,25 +24,44 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Azonix, Inter, Arial, sans-serif',
+    fontFamily: 'Lora Italic, Georgia, serif, Inter, Arial, sans-serif',
+    button: {
+      fontFamily: 'Lora Italic, Georgia, serif',
+    },
     h1: {
+      fontFamily: 'Playfair Italic, Georgia, serif',
       fontSize: '2.5rem',
       fontWeight: 700,
       color: '#2C2C2C',
     },
     h2: {
+      fontFamily: 'Playfair Italic, Georgia, serif',
       fontSize: '2rem',
       fontWeight: 600,
       color: '#2C2C2C',
     },
     h3: {
+      fontFamily: 'Playfair Italic, Georgia, serif',
       fontSize: '1.5rem',
       fontWeight: 600,
       color: '#2C2C2C',
     },
+    h4: {
+      fontFamily: 'Playfair Italic, Georgia, serif',
+    },
+    h5: {
+      fontFamily: 'Playfair Italic, Georgia, serif',
+    },
+    h6: {
+      fontFamily: 'Playfair Italic, Georgia, serif',
+    },
     body1: {
+      fontSize: '1.125rem',
+      lineHeight: 1.75,
+    },
+    body2: {
       fontSize: '1rem',
-      lineHeight: 1.6,
+      lineHeight: 1.75,
     },
   },
   components: {

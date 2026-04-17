@@ -12,9 +12,9 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Event Works',
-    description: 'Best event management company in Punjab since 2004. Expert wedding planning, catering, decoration, photography, DJ services in Ludhiana, Phagwara, Jalandhar.',
-    telephone: '+91-9465638069',
-    email: 'support@eventworks.in',
+    description: 'Best event management company in Punjab since 2004. Expert wedding planning, catering, decoration, DJ services in Punjab',
+    telephone: '+91-9056220903',
+    email: 'harsh@eventworks.in',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Phagwara',
@@ -26,7 +26,7 @@ export default function HomePage() {
       ratingValue: '4.9',
       reviewCount: '500',
     },
-    areaServed: ['Ludhiana', 'Phagwara', 'Jalandhar'],
+    areaServed: ['Punjab'],
   };
 
   return (
@@ -51,7 +51,7 @@ export default function HomePage() {
               variant="h2" 
               align="center" 
               gutterBottom
-              sx={{ fontFamily: 'Azonix', textTransform: 'uppercase' }}
+              sx={{ fontFamily: 'Playfair Italic', textTransform: 'uppercase', color: 'white' }}
             >
               Ready to Plan Your Dream Event?
             </Typography>
@@ -59,7 +59,7 @@ export default function HomePage() {
               Start building your perfect event package in just 5 minutes
             </Typography>
             <Box display="flex" justifyContent="center">
-              <Link href="/package-builder" passHref>
+              <Link href="/contact" passHref>
                 <Button
                   variant="contained"
                   size="large"
@@ -69,7 +69,7 @@ export default function HomePage() {
                     px: 4,
                     py: 2,
                     fontSize: '1.1rem',
-                    fontFamily: 'Azonix',
+                    fontFamily: 'Lora Italic',
                     '&:hover': {
                       bgcolor: '#B8941F',
                     },
@@ -89,7 +89,7 @@ export default function HomePage() {
           <Grid container spacing={4} justifyContent="center">
             <Grid item xs={6} md={3}>
               <Box textAlign="center">
-                <Typography variant="h3" color="primary.main" fontWeight="bold" sx={{ fontFamily: 'Azonix' }}>
+                <Typography variant="h3" color="primary.main" fontWeight="bold" sx={{ fontFamily: 'Playfair Italic' }}>
                   10,000+
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
@@ -99,8 +99,8 @@ export default function HomePage() {
             </Grid>
             <Grid item xs={6} md={3}>
               <Box textAlign="center">
-                <Typography variant="h3" color="primary.main" fontWeight="bold" sx={{ fontFamily: 'Azonix' }}>
-                  50+
+                <Typography variant="h3" color="primary.main" fontWeight="bold" sx={{ fontFamily: 'Playfair Italic' }}>
+                  Multiple
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Trusted Vendors
@@ -109,17 +109,17 @@ export default function HomePage() {
             </Grid>
             <Grid item xs={6} md={3}>
               <Box textAlign="center">
-                <Typography variant="h3" color="primary.main" fontWeight="bold" sx={{ fontFamily: 'Azonix' }}>
-                  3
+                <Typography variant="h3" color="primary.main" fontWeight="bold" sx={{ fontFamily: 'Playfair Italic' }}>
+                  Across
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Cities Covered
+                  Punjab
                 </Typography>
               </Box>
             </Grid>
             <Grid item xs={6} md={3}>
               <Box textAlign="center">
-                <Typography variant="h3" color="primary.main" fontWeight="bold" sx={{ fontFamily: 'Azonix' }}>
+                <Typography variant="h3" color="primary.main" fontWeight="bold" sx={{ fontFamily: 'Playfair Italic' }}>
                   4.9★
                 </Typography>
                 <Typography variant="body2" color="text.secondary">

@@ -1,46 +1,28 @@
 'use client';
 
-import { Box, Container, Typography, Grid, Card, CardContent } from '@mui/material';
+import { Box, Container, Grid, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
-import {
-  Palette as PaletteIcon,
-  PhotoCamera as PhotoCameraIcon,
-  Face as FaceIcon,
-  Restaurant as RestaurantIcon,
-  MusicNote as MusicNoteIcon,
-  Support as SupportIcon,
-} from '@mui/icons-material';
 
 const features = [
   {
-    icon: <PaletteIcon sx={{ fontSize: 40 }} />,
-    title: 'Premium Decor Themes',
-    description: 'Choose from our collection of stunning themes, from Royal elegance to Minimalist designs.',
+    image: '/images/premium_decor.jpg',
+    title: 'Elegant Decor',
+    description: 'Luxury decoration that elevates weddings, corporate events, and celebrations.',
   },
   {
-    icon: <PhotoCameraIcon sx={{ fontSize: 40 }} />,
-    title: 'Professional Photography',
-    description: 'Capture every precious moment with our network of skilled photographers across three service tiers.',
+    image: '/images/Steel-Catering-Counter.jpg',
+    title: 'Premium Catering',
+    description: 'Custom menus and seamless service for every gathering.',
   },
   {
-    icon: <FaceIcon sx={{ fontSize: 40 }} />,
-    title: 'Expert Makeup Artists',
-    description: 'Look your absolute best with our professional makeup artists for any occasion.',
+    image: '/images/our-dj-night.jpg',
+    title: 'Entertainment Experts',
+    description: 'DJ and entertainment solutions that keep guests engaged all night.',
   },
   {
-    icon: <RestaurantIcon sx={{ fontSize: 40 }} />,
-    title: 'Exquisite Catering',
-    description: 'Delight your guests with carefully crafted menus from our trusted catering partners.',
-  },
-  {
-    icon: <MusicNoteIcon sx={{ fontSize: 40 }} />,
-    title: 'DJ Services',
-    description: 'Professional DJ and entertainment services to keep your celebration lively and memorable.',
-  },
-  {
-    icon: <SupportIcon sx={{ fontSize: 40 }} />,
-    title: '24/7 Support',
-    description: 'Our dedicated team is always available to assist you throughout your event journey.',
+    image: '/images/haldi.jpg',
+    title: 'Ceremony Styling',
+    description: 'Beautiful ceremony coordination with a focus on authentic moments.',
   },
 ];
 
@@ -53,70 +35,51 @@ export default function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <Typography 
-            variant="h2" 
-            align="center" 
+          <Typography
+            variant="h2"
+            align="center"
             gutterBottom
-            sx={{ fontFamily: 'Azonix', textTransform: 'uppercase' }}
+            sx={{ fontFamily: 'Playfair Italic', textTransform: 'uppercase' }}
           >
-            Why Choose Event Works?
+            Our Signature Services
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             align="center"
             color="text.secondary"
-            sx={{ mb: 6, maxWidth: 600, mx: 'auto' }}
+            sx={{ mb: 6, maxWidth: 700, mx: 'auto' }}
           >
-            We're not just another booking platform. We're your trusted event planning partner, 
-            ensuring every detail is perfect.
+            Explore our most popular event solutions with clear service details and premium presentation.
           </Typography>
-        </motion.div>
-
-        <Grid container spacing={4}>
-          {features.map((feature, index) => (
-            <Grid item xs={12} md={6} lg={4} key={index}>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-              >
-                <Card
-                  sx={{
-                    height: '100%',
-                    transition: 'transform 0.3s ease-in-out',
-                    '&:hover': {
-                      transform: 'translateY(-8px)',
-                    },
-                  }}
+          <Grid container spacing={4}>
+            {features.map((feature, index) => (
+              <Grid item xs={12} md={6} key={index}>
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <CardContent sx={{ p: 3, textAlign: 'center' }}>
-                    <Box
-                      sx={{
-                        color: 'primary.main',
-                        mb: 2,
-                        display: 'flex',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      {feature.icon}
-                    </Box>
-                    <Typography 
-                      variant="h6" 
-                      gutterBottom 
-                      fontWeight={600}
-                      sx={{ fontFamily: 'Azonix', fontSize: '0.9rem' }}
-                    >
-                      {feature.title}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary" lineHeight={1.6}>
-                      {feature.description}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            </Grid>
-          ))}
-        </Grid>
+                  <Card sx={{ borderRadius: 4, overflow: 'hidden', boxShadow: 'none' }}>
+                    <CardMedia
+                      component="img"
+                      image={feature.image}
+                      alt={feature.title}
+                      sx={{ width: '100%', height: 280, objectFit: 'cover' }}
+                    />
+                    <CardContent sx={{ p: 3, backgroundColor: 'background.paper' }}>
+                      <Typography variant="h6" fontWeight={700} sx={{ mb: 1, fontFamily: 'Playfair Italic' }}>
+                        {feature.title}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary" lineHeight={1.8}>
+                        {feature.description}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              </Grid>
+            ))}
+          </Grid>
+        </motion.div>
       </Container>
     </Box>
   );

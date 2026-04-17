@@ -15,11 +15,8 @@ export default function AboutPage() {
           <ArrowBack />
         </IconButton>
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <Typography variant="h2" align="center" gutterBottom sx={{ fontFamily: 'Azonix', textTransform: 'uppercase', mb: 6 }}>
-            About Event Works
-          </Typography>
-          <Typography variant="h5" gutterBottom sx={{ fontFamily: 'Azonix', fontSize: '1.2rem', mb: 3, color: '#D4AF37' }}>
-            Our Story
+          <Typography variant="h2" align="center" gutterBottom sx={{ fontFamily: 'Playfair Italic', textTransform: 'uppercase', mb: 6 }}>
+            About Us
           </Typography>
           <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, mb: 3 }}>
             Since 2004, Event Works has been crafting unforgettable event experiences in Phagwara. What started as a passion for creating beautiful celebrations has grown into a trusted name in event management across multiple cities in Punjab.
@@ -38,3 +35,4 @@ export default function AboutPage() {
     </Box>
   );
 }
+

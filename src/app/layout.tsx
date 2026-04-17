@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script'; // Import added
 import ThemeRegistry from '../components/ThemeRegistry';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -26,6 +27,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <link rel="preload" href="/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Lora-Italic-VariableFont_wght.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -117,6 +120,19 @@ export default function RootLayout({
         />
       </head>
       <body style={{ overflowX: 'hidden' }}>
+        {/* GOOGLE ANALYTICS INTEGRATION */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-1CHE72024J"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-1CHE72024J');
+          `}
+        </Script>
         <ThemeRegistry>
           <Navigation />
           {children}
